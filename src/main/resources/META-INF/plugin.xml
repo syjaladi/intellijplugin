@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.example.kotlinplugin</id>
+    <name>Kotlin JDK 17 Sample</name>
+    <version>1.0</version>
+    <vendor email="support@example.com" url="http://example.com">Example</vendor>
+    <depends>Git4Idea</depends>
+    <depends>com.intellij.modules.vcs</depends>
+    <depends>org.sonarlint.idea</depends>
+    <description>
+        A simple Kotlin plugin example using JDK 17.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <applicationListeners>
+    </applicationListeners>
+
+    <actions>
+        <action id="CodeReviewAction" class="com.example.CodeReviewAction" text="Run Code Review" description="Runs code review on modified Git files">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
